@@ -1,0 +1,38 @@
+
+Step No	Command	Description
+1	Git Installation	Download Git  from the website: https://www.git-scm.com/
+
+2	Command line
+>git –version
+	If Git is installed, it should show something like git version X.Y
+3	git config --global user.name "w3schools-test"
+git config --global user.email "test@w3schools.com"	Configure Git
+Change the user name and e-mail address to your own
+4	mkdir myproject
+cd myproject	Creating Git Folder
+
+5	git init	Initialize Git
+Initialized empty Git repository in /Users/user/myproject/.git/
+6	git status	To check the status
+7	git add index.html	Add file to staging environment
+8	git add --all	 add all files in the current directory to the Staging Environment:
+9	git commit -m "First release of Hello World!"	The committ command performs a commit, and the -m "message" adds a message.
+10	git commit -a -m "Updated index.html with a new line"	Skips staging environment
+11	git log	To view the history of commits for a repository, you can use the log command
+12	git command -help	See all the available options for the specific command
+13	git help --all	See all possible commands
+14	git commit -help	See help for specific command
+15	git branch hello-world-images	a branch is a new/separate version of the main repository. This command creates a new branch hello-world-images
+16	git checkout hello-world-images	checkout is the command used to check out/ move to a branch
+17	git checkout master	Used to switch between branches
+18	https://github.com/	Create a new account on github
+19		Create a Repository on GitHub
+
+20	git remote add origin https://github.com/w3schools-test/hello-world.git	Push Local Repository to GitHub
+
+21	git push --set-upstream origin master	push master branch to the origin url, 
+22		go back into GitHub and see that the repository has been updated:
+23	git fetch origin	fetch gets all the change history of a tracked branch/repo
+24	git merge origin/master	merge combines the current branch, with a specified branch.
+25	git pull origin	pull is a combination of fetch and merge
+It is used to pull all changes from a remote repository into the branch you are working on.
